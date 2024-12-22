@@ -1,7 +1,7 @@
-// Script to handle dynamic content loading
+// Gestiono la carga del contenido
 const localStorageKey = 'selectedRoom';
 
-// Load data from external JSON file
+// Cargo data del json externo
 function loadData(roomId) {
     fetch('/js/datos.json')
         .then(response => response.json())
@@ -15,9 +15,9 @@ function loadData(roomId) {
         .catch(error => console.error('Error fetching data:', error));
 }
 
-// Update the UI with room data
+// actualizo la data mostrada en la interfaz de usuario
 function updateUI(roomData, roomId) {
-    // Update data column
+    // actualizo la columna de data
     const dataColumn = document.querySelector('.data');
     dataColumn.innerHTML = `
         <h3>Detalles</h3>
@@ -49,18 +49,18 @@ function updateUI(roomData, roomId) {
         </ul>
     `;
 
-    // Update image column
+    // actualizo la columna de la foto
     const imageColumn = document.querySelector('.image');
     imageColumn.innerHTML = `
         <h3>Foto</h3>
         <img src="${roomData.image}" alt="Foto de la Habitación" style="max-width: 100%; border-radius: 5px;">
     `;
 
-    // Update button styles
+    // actualizo el botón de estilos
     updateButtonStyles(roomId);
 }
 
-// Highlight the active button
+// le pongo visibilidad al botón activo
 function updateButtonStyles(activeRoomId) {
     const buttons = document.querySelectorAll('.buttons button');
     buttons.forEach(button => {
@@ -71,12 +71,12 @@ function updateButtonStyles(activeRoomId) {
     });
 }
 
-// Save selected room to localStorage
+// Guardo la habitación seleccionada en el localStorage
 function saveToLocalStorage(roomId) {
     localStorage.setItem(localStorageKey, roomId);
 }
 
-// Load selected room from localStorage on page load
+// cargo la habitación cargada en el localStorage
 function loadFromLocalStorage() {
     const savedRoomId = localStorage.getItem(localStorageKey);
     if (savedRoomId) {
@@ -84,5 +84,5 @@ function loadFromLocalStorage() {
     }
 }
 
-// Initialize page
+// inicializo página
 window.onload = loadFromLocalStorage;
