@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arriba la Luna - Trevelin - Chubut - Cabañas</title>
+    <link rel="stylesheet" href="/css/styles_cabanas.css">
+    <!-- <link rel="stylesheet" href="/css/media_cabanas.css"> -->
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d002480a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <a href="/index.html" target="_self"><img class="logo" src="/img/logo-con-nombre-arriba-la-luna-blanco-con-fondo-transparente.png" alt="Logo Arriba la Luna"></a>
+                
+            <nav>
+                <ul>
+                    <li><a href="/index.html" target="_self">Inicio</a></li>
+                    <li><a href="#" target="_self"><li>Cabañas</a></li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+    <main>
+        <h1>Cabañas</h1>
+        <p class="desglose_cabanas">Arriba la Luna es una bioconstrucción natural en dos pisos.  
+            <br>
+            Cada cabaña cuenta con 1 baño compartido en planta alta y 1 toilette compartido en planta baja.
+            <br>
+            Al ser una bioconstrucción de paredes tan gruesas, es acústica y térmicamente más estable. Ambas cabañas poseen estufa a leña estilo rusa.</p>
+        <div class="contenedor">
+            <div class="botones_reservas">    
+                
+                <a href="https://wa.me/message/YP3MEWYVBMB6H1" target="_blank"><i class="fa-brands fa-whatsapp" id="w-reservas"></i></a>
+                
+            
+                <a href="https://www.booking.com/hotel/ar/arriba-la-luna-ecovilla-rural.es-ar.html?label=gen173nr-1BCAsoDEIdYXJyaWJhLWxhLWx1bmEtZWNvdmlsbGEtcnVyYWxIM1gEaAyIAQGYASy4ARjIAQ_YAQHoAQGIAgGoAgS4Av_U3LgGwAIB0gIkOTQ0N2Q3ZWQtN2IxYy00YTNjLTg5ZTktODYzNjMzNmJjYzMy2AIF4AIB&sid=8290b0ebce711b3dcadffa6b49d9043a&dist=0&keep_landing=1&sb_price_type=total&type=total&" target="_blank"><button class="booking">Booking</button></a>
+
+                <a href="https://www.airbnb.com.ar/rooms/1012172728766751340?check_in=2024-08-30&check_out=2024-08-31&guests=1&adults=4&children=2&s=67&unique_share_id=ecb60852-b9ce-4ec6-a17a-84cd5b73fc79" target="_blank"><button class="airbnb">Airbnb</button></a>
+            
+            </div>
+        </div>
+        
+        <div class="container">
+            <!-- Columna 1: Buttons -->
+            <div class="buttons">
+                <button onclick="loadData(1)" id="btn-1">Habitación Doble 1</button>
+                <button onclick="loadData(2)" id="btn-2">Habitación 2</button>
+                <button onclick="loadData(3)" id="btn-3">Habitación 3</button>
+                <button onclick="loadData(4)" id="btn-4">Habitación 4</button>
+                <button onclick="loadData(5)" id="btn-5">Habitación 5</button>
+                <button onclick="loadData(6)" id="btn-6">Habitación 6</button>
+            </div>
+    
+            <!-- Columna 2: Datos -->
+            <div class="data">
+                <h3>Detalles</h3>
+                <p class="placeholder">Seleccione una Habitación para ver los detalles</p>
+            </div>
+    
+            <!-- Columna 3: Foto -->
+            <div class="image">
+                <h3>Foto</h3>
+                <p class="placeholder">Seleccione una Habitación para ver su Foto</p>
+            </div>
+        </div> <!--Cierra container--> 
+    </main>   
+    <footer>
+        <section class="contenedor_footer">
+            <article class="footer-izquierda">
+                <nav class="nav-footer">
+                    <ul>
+                        <li><a href="/assets/ubicacion.html" target="_self">Ubicación</a></li>
+                        <li><a href="/assets/cabanas.html" target="_self">Cabañas</a></li>
+                        <li><a href="/assets/contacto.html" target="_self">Contacto</a></li>
+                    </ul>
+                </nav>
+                <span>Arriba la Luna - <a href="https://www.instagram.com/clicsbasicos/" target="_blank">@clicsbasicos</a> 2024</span>
+            </article>
+            <article class="footer-derecha">
+                <div class="fondo-redes">
+                    <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/arribalaluna.trevelin" target="_blank">@arribalaluna.trevelin</a></i>
+                    <i class="fa-brands fa-facebook"><a href="https://www.facebook.com/arribalaluna.trevelin">arribalaluna.trevelin</a></i>
+                    <i class="fa-brands fa-whatsapp" id="w-footer"><a href="https://wa.me/message/YP3MEWYVBMB6H1">(+54 911) 4538-5610</a></i>
+                </div>    
+            </article>
+        </section>    
+    </footer>
+    <script src="/js/script.js"></script>
+    <script src="/js/datos.json"></script> 
+</body>
+</html>

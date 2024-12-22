@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic JSON Example</title>
+    <link rel="stylesheet" href="/css/styles-prueba2.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Column 1: Buttons -->
+        <div class="buttons">
+            <button onclick="loadData(1)" id="btn-1">Room 1</button>
+            <button onclick="loadData(2)" id="btn-2">Room 2</button>
+            <button onclick="loadData(3)" id="btn-3">Room 3</button>
+            <button onclick="loadData(4)" id="btn-4">Room 4</button>
+            <button onclick="loadData(5)" id="btn-5">Room 5</button>
+            <button onclick="loadData(6)" id="btn-6">Room 6</button>
+        </div>
+
+        <!-- Column 2: Details -->
+        <div class="details">
+            <h3>Details</h3>
+            <ul>
+                <li>Size</li>
+                <li>Capacity</li>
+                <li>Price</li>
+                <li>Amenities</li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Data -->
+        <div class="data">
+            <h3>Room Information</h3>
+            <p class="placeholder">Click a button to view details.</p>
+        </div>
+
+        <!-- Column 4: Image -->
+        <div class="image">
+            <h3>Image</h3>
+            <p class="placeholder">Click a button to view the image.</p>
+        </div>
+    </div>
+
+    <script src="/js/script-prueba2.js"></script>
+    <script src="/js/data-prueba2.json"></script>
+</body>
+</html>

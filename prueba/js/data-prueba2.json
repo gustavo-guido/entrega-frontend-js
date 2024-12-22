@@ -1,0 +1,21 @@
+{
+    "rooms": [
+        {
+            "id": 1,
+            "size": "50 sqm",
+            "capacity": 2,
+            "price": "$100 per night",
+            "amenities": ["WiFi", "TV", "Air Conditioning"],
+            "image": "room1.jpg"
+        },
+        {
+            "id": 2,
+            "size": "60 sqm",
+            "capacity": 3,
+            "price": "$150 per night",
+            "amenities": ["WiFi", "TV", "Balcony"],
+            "image": "room2.jpg"
+        }
+        
+    ]
+}

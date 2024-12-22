@@ -1,0 +1,338 @@
+/*********************************/
+/******* Paleta de Colores *******/
+/*********************************/
+:root { 
+    --casi-blanco: #f4f2e6; 
+    --arena: #c8bca5;
+    --marron-claro:#bc8c48;
+    --camel:#917357;
+    --marron: #693712;
+    --celeste-claro-apagado: #b1ccd5;
+    --celeste: #9ccce1 ;
+    --celeste-apagado: #94b6cd;
+    --celeste-intenso: #6AB4D2;
+    --semi-anaranjado: #deb80c;
+    --verde-claro: #a3a050;
+    --verde-musgo: #7d770f;
+    --booking:#003B95;
+    --airbnb:#FF385C;
+    --naranja-posts:#D57721;
+    --letra-oscura-posts:#433752;
+    --letra-marron-posts:#6B3814;
+    --cabecera-y-footer:#D7AB51;
+
+    /********** Fuente MIRZA ********/
+    --font-mirza-regular: "Mirza", serif;
+    --font-mirza-medium: "Mirza", serif;
+    --font-mirza-semibold: "Mirza", serif;
+    --font-mirza-bold: "Mirza", serif;
+
+    /******** Fuente MONTSERRAT ******/
+    --font-montserrat-regular: "Montserrat", serif;
+    --font-montserrat-medium: "Montserrat", serif;
+    --font-montserrat-semibold: "Montserrat", serif;
+    --font-montserrat-bold: "Montserrat", serif;
+
+    /*********** PESO FONTS *********/
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--casi-blanco);
+    height: 100vh;
+}
+/* =========================================== */
+/* ================= HEADER ================== */
+/* =========================================== */
+header{
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: center; */
+    /* background-color: var(--marron-claro); */
+    background-color: var(--cabecera-y-footer);
+    height: 10%;
+}
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    height:100%;
+    margin: 0 auto;
+}
+.cabecera a{
+    width:50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+header a img{
+    border-style: none;
+    margin: auto;
+    height: 80%;
+}
+header a img:hover{
+    transition: 0.5s ease all;
+    transform: scale(0.8, 0.8);
+}
+header nav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    width: 50%;
+}
+header nav ul{
+    display:inline-block;
+}
+header nav ul li{
+    font-family: var(--font-montserrat-medium);
+    font-weight: var(--weight-medium);
+    font-style:normal;
+    font-size: 20px;
+    display: inline-block;
+    margin-left:12px;
+}
+header nav ul li a{
+    font-family: var(--font-montserrat-medium);
+    font-weight: var(--weight-medium);
+    font-style:normal;
+    /* text-decoration: underline; */
+    font-size: 1.5rem;
+    color: azure;
+    display: inline-block;
+    margin-left:12px;
+}
+header nav ul li a:hover{
+    /* background-color: var(--marron); */
+    transition: 0.5s ease all;
+    transform: scale(1.1, 1.1);
+}
+
+/***************************************************/
+/**********************MAIN*************************/
+/***************************************************/
+main{
+    display:flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: space-around; */
+    height: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+main section.izquierda{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width:50%;
+}
+main section.izquierda h1{
+    font-family: var(--font-mirza-regular);
+    color:var(--marron);
+    font-size: 70px;
+}
+main section.izquierda h2, 
+main section.izquierda h3{
+    font-family: var(--font-montserrat-semibold);
+    color:var(--verde-musgo);
+    font-size: 20px;
+}
+main section.izquierda p{
+    font-family: var(--font-montserrat-regular);
+    color:var(--camel);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top:1rem ;
+    width:80%;
+    text-align: center;
+}
+main section.izquierda .botones_reservas{
+    font-family: var(--font-montserrat-regular);
+    font-weight: var(--weight-regular);
+    font-style: normal;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    gap:1rem;
+}
+main section.izquierda .botones_reservas a button.booking{
+    background-color: var(--booking);
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    color:azure;
+    width: 6rem;
+}
+
+main section.izquierda .botones_reservas a button.booking:hover{
+    color: var(--booking);
+    transition: .2s ease all;
+    background-color: var(--semi-anaranjado);
+    border-color: var(--arena);
+}
+
+main section.izquierda .botones_reservas a button.airbnb{
+    background-color: var(--airbnb);
+    padding:8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    /* border-color: inherit; */
+    text-decoration: none;
+    color:azure;
+    width: 6rem;
+}
+
+main section.izquierda .botones_reservas a button.airbnb:hover{
+    color: var(--booking);
+    transition: .2s ease all;
+    background-color: var(--semi-anaranjado);
+    border-color: var(--arena);
+}
+main section.derecha{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position:relative;
+    width:50%;
+}
+section.derecha img{
+    max-width:500px;
+    border-radius:15px ;
+    left:20px;
+    z-index: 100;
+}
+section.derecha .bloque-fondo{
+    background-color: var(--verde-musgo);
+    width: 560px;
+    height:320px;
+    position: absolute;
+    border-radius: 10px;
+}
+/***************************************************/
+/*********************FOOTER************************/
+/***************************************************/
+footer{
+    height: 15%;
+    background-color:var(--cabecera-y-footer);
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; */
+    
+}
+footer .contenedor_footer{
+    max-width:1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    margin:0 auto;
+}
+footer .contenedor_footer article.footer-izquierda{
+    max-width: 600px;
+    /* width: 50%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around; 
+    align-items:center;
+    font-family: var(--font-montserrat-regular);
+    color: azure;
+}
+
+footer .contenedor_footer article.footer-izquierda nav.nav-footer ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 60px;
+}
+footer .contenedor_footer article.footer-izquierda nav.nav-footer ul li{
+    color: azure;
+}
+footer .contenedor_footer article.footer-izquierda nav.nav-footer ul li a{
+    color: azure;
+    font-family: var(--font-montserrat-regular);
+}
+footer .contenedor_footer article.footer-izquierda nav.nav-footer ul li a:hover{
+    font-family: var(--font-montserrat-bold);
+    color:var(--camel) ;
+    transition: 0.3 ease all;
+}
+footer .contenedor_footer article.footer-izquierda span{
+    text-decoration: none;
+    color: azure;
+}
+footer .contenedor_footer article.footer-izquierda span a{
+    color:#5c3e06;
+}
+footer .contenedor_footer article.footer-derecha{
+    background-color: var(--camel);
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-around;
+    height: 100%;
+    max-width: 600px;
+    /* width: 50%; */
+    right: 0;
+}
+footer .contenedor_footer article.footer-derecha .fondo-redes{
+    background-color: #3a2704;
+    padding:1rem 2rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+footer .contenedor_footer article.footer-derecha .fondo-redes i.fa-brands.fa-instagram{
+    color: azure;
+}
+footer .contenedor_footer article.footer-derecha .fondo-redes i.fa-brands.fa-instagram a{
+    color: azure;
+    font-family: var(--font-montserrat-regular);
+    font-size: 10px;
+    margin-left: 5px;
+}
+footer .contenedor_footer article.footer-derecha .fondo-redes i.fa-brands.fa-facebook{
+    color: azure;
+    margin-left: 10px;
+}
+footer .contenedor_footer article.footer-derecha .fondo-redes i.fa-brands.fa-facebook a{
+    color: azure;
+    font-family: var(--font-montserrat-regular);
+    font-size: 10px;
+    margin-left: 10px;
+}
+footer .contenedor_footer article.footer-derecha .fondo-redes i.fa-brands.fa-whatsapp{
+    color: azure;
+    margin-left:10px;
+}
+footer .contenedor_footer article.footer-derecha .fondo-redes i.fa-brands.fa-whatsapp a{
+    color: azure;
+    font-family: var(--font-montserrat-regular);
+    font-size: 10px;
+    margin-left: 10px;
+}

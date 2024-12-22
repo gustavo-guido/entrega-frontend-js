@@ -1,0 +1,151 @@
+/**********************************************************/
+/********************* 1023 *******************************/
+/**********************************************************/
+@media(max-width:1023px){
+.cabecera{
+    max-width: 800px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    width: 100%;
+    height:auto;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .botones_reservas{
+    margin: 30px;
+}
+main .botones_reservas a button.booking,
+main .botones_reservas a button.airbnb{
+    width: 8rem;
+    padding: 10px 20px;
+}
+main .botones_reservas i.fa-brands.fa-whatsapp{
+    width: 8rem;
+}
+main section.caja-form{
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+footer{
+    position: relative;
+    margin-top: 40px;
+    height: auto;
+}
+footer .contenedor_footer{
+    max-width:600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    margin:0 auto;
+}
+footer .contenedor_footer article.footer-izquierda{
+    height:10rem;
+}
+}
+/**********************************************************/
+/********************* 767 ********************************/
+/**********************************************************/
+@media(max-width:767px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        margin: 0 auto;
+    }
+    header{
+        width: 100%;
+        margin: 0 auto;
+    } 
+    header .cabecera {
+        width: 60%;
+        /* margin: 0 auto; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin:0 auto;
+    }
+    header .cabecera a{
+        width: 30%;
+    }
+    header .cabecera nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+    main{
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    main .botones_reservas a button.booking,
+    main .botones_reservas a button.airbnb{
+        width: 8rem;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        margin-bottom: 2rem;
+    }
+    main .botones_reservas a i.fa-brands.fa-whatsapp{
+        width: 4rem;
+    }
+    main section.caja-form{
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    
+
+
+
+
+
+    footer{
+        /* position: revert; */
+        border-radius: 20px;
+        /* height: fit-content; */
+    }
+    footer section.contenedor_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin:0 auto;
+        border-radius: 20px;
+    }
+    footer section.contenedor_footer article.footer-izquierda .nav-footer{
+        padding-top:10px;
+    }
+    footer section.contenedor_footer article.footer-izquierda span{
+        margin-top:30px;
+    }
+    footer section.contenedor_footer article.footer-derecha{
+        /* margin-top:40px; */
+        width: 100%;
+    }
+    footer section.contenedor_footer article.footer-derecha .fondo-redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap:30px;
+    }
+    footer .contenedor_footer article.footer-derecha .fondo-redes i.fa-brands.fa-instagram a,
+    footer .contenedor_footer article.footer-derecha .fondo-redes i.fa-brands.fa-facebook a,
+    footer .contenedor_footer article.footer-derecha .fondo-redes i.fa-brands.fa-whatsapp a{
+        font-size: 14px;
+    }
+}

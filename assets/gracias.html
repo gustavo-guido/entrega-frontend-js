@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arriba la Luna - Trevelin - Chubut - Muchas Gracias</title>
+    <link rel="stylesheet" href="/css/styles_gracias.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5d002480a2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="/index.html" target="_self"><img class="logo" src="/img/logo-con-nombre-arriba-la-luna-blanco-con-fondo-transparente.png" alt="Logo Arriba la Luna"></a>
+            
+        <nav>
+            <ul>
+                <li><a href="/index.html" target="_self">Inicio</a></li>
+                <li><a href="/assets/cabanas.html" target="_self"><li>Cabañas</a></li>
+            </ul>
+        </nav>
+        <div class="botones_reservas">
+            <a href="https://www.booking.com/hotel/ar/arriba-la-luna-ecovilla-rural.es-ar.html?label=gen173nr-1BCAsoDEIdYXJyaWJhLWxhLWx1bmEtZWNvdmlsbGEtcnVyYWxIM1gEaAyIAQGYASy4ARjIAQ_YAQHoAQGIAgGoAgS4Av_U3LgGwAIB0gIkOTQ0N2Q3ZWQtN2IxYy00YTNjLTg5ZTktODYzNjMzNmJjYzMy2AIF4AIB&sid=8290b0ebce711b3dcadffa6b49d9043a&dist=0&keep_landing=1&sb_price_type=total&type=total&" target="_blank"><button class="booking">Booking</button></a>
+            <a href="https://www.airbnb.com.ar/rooms/1012172728766751340?check_in=2024-08-30&check_out=2024-08-31&guests=1&adults=4&children=2&s=67&unique_share_id=ecb60852-b9ce-4ec6-a17a-84cd5b73fc79" target="_blank"><button class="airbnb">Airbnb</button></a>
+        </div>    
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <section class="caja-form">
+            <!--Comienza Formulario de Contacto para formspree-->
+            <form action="https://formspree.io/f/xyzgrlow" method="post">
+                <div class="combo-form">
+                    <label for="nombre"><Nombre></Nombre></label><input type="text" name="nombre" id="nombre" placeholder="ej. Juan" maxlength="25" required>
+                </div>
+                <div class="combo-form">
+                    <label for="apellido">Apellido*</label><input type="text" name="apellido" id="apellido" placeholder="ej. Pérez" maxlength="25" required>
+                </div>
+                <div class="combo-form">
+                    <label for="mail">Email*</label><input type="email" name="mail" id="mail" placeholder="ejemplo@mail.com" required>
+                </div>
+                <div class="combo-form">
+                    <label for="telefono">WhatsApp</label><input type="tel" name="telefono" id="telefono" placeholder="ej. +54 9 2945 5555-5555" maxlength="20">
+                </div>
+                <h4>Seleccione la opción de su consulta</h4>
+                <div class="combo-form">
+                    <label for="tipo">Opción</label>
+                    <select name="tipo" id="tipo">
+                        <option value="hostel">Hostel</option>
+                        <option value="resto">Resto</option>
+                        <option value="cupula">Cúpula</option>
+                        <option value="voluntariado">Voluntariado</option>
+                        <option value="huerta">Huerta</option>
+                    </select>
+                </div>
+                <div class="combo-form">
+                    <label for="descripcion">Consulta</label><textarea rows="10" cols="40" placeholder="Escriba su consulta aquí"></textarea>
+                </div>
+                <div class="combo-btn">
+                    <input class="btn-reset" type="reset" value="Borrar">
+                    <input class="btn-submit" type="submit" value="Enviar">
+                </div>    
+            </form>
+        </section>
+          
+    </main>   
+    <footer>
+        <section class="footer-izquierda">
+            <nav class="nav-footer">
+                <ul>
+                    <li><a href="/assets/ubicacion.html" target="_self">Ubicación</a></li>
+                    <li><a href="/assets/cabanas.html" target="_self">Cabañas</a></li>
+                    <li><a href="/assets/contacto.html" target="_self">Contacto</a></li>
+                </ul>
+            </nav>
+            <span>Arriba la Luna - <a href="https://www.instagram.com/clicsbasicos/" target="_blank">@clicsbasicos</a> 2024</span>
+        </section>
+        <section class="footer-derecha">
+            <div class="fondo-redes">
+                <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/arribalaluna.trevelin" target="_blank">@arribalaluna.trevelin</a></i>
+                <i class="fa-brands fa-facebook"><a href="https://www.facebook.com/arribalaluna.trevelin">arribalaluna.trevelin</a></i>
+                <i class="fa-brands fa-whatsapp"><a href="https://wa.me/message/YP3MEWYVBMB6H1">(+54 911) 4538-5610</a></i>
+            </div>    
+        </section>
+    </footer>
+  
+</body>
+</html>

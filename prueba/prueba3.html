@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba 3</title>
+    <link rel="stylesheet" href="/css/styles-prueba3.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Columna 1: Buttons -->
+        <div class="buttons">
+            <button onclick="loadData(1)" id="btn-1"><!--Habitación Doble con Cuna-->Habitación Doble 1</button>
+            <button onclick="loadData(2)" id="btn-2"><!--Habitación Izquierda Arriba Individual-->Habitación 2</button>
+            <button onclick="loadData(3)" id="btn-3"><!--Habitación Izquierda Arriba-->Habitación 3</button>
+            <button onclick="loadData(4)" id="btn-4"><!--Habitación Izquierda Abajo-->Habitación 4</button>
+            <button onclick="loadData(5)" id="btn-5"><!--Habitación Derecha Arriba-->Habitación 5</button>
+            <button onclick="loadData(6)" id="btn-6"><!--Habitación Derecha Abajo-->Habitación 6</button>
+        </div>
+
+        <!-- Columna 2: Detalles -->
+        <div class="details">
+            <h3>Details</h3>
+            <ul>
+                <li>Size</li>
+                <li>Capacity</li>
+                <li>Price</li>
+                <li>Amenities</li>
+            </ul>
+        </div>
+
+        <!-- Columna 3: Datos -->
+        <div class="data">
+            <h3>Información de la Habitación</h3>
+            <p class="placeholder">Seleccione una Habitación para ver los detalles</p>
+        </div>
+
+        <!-- Columna 4: Foto -->
+        <div class="image">
+            <h3>Foto</h3>
+            <p class="placeholder">Seleccione una Habitación para ver su Foto</p>
+        </div>
+    </div>
+
+    <script src="/js/script-prueba3.js"></script>
+    <script src="/js/data-prueba3.json"></script>
+</body>
+</html>
